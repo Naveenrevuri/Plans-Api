@@ -167,7 +167,7 @@
                             <exclude>com/example/demo/dto/*</exclude>
                             <exclude>com/example/demo/entity/*</exclude>
                             <exclude>com/example/demo/config/*</exclude>
-                            <exclude>com/example/demo/repo/*</exclude>
+                           
                             <exclude>com/example/demo/*</exclude>
                             
                         </excludes>
