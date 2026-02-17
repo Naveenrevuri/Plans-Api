@@ -1,0 +1,612 @@
+2026-02-15 00:00:26 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:05:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:10:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:15:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:20:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:25:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:30:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:35:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:40:27 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 00:42:28 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-15 00:42:28 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-15 00:42:28 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-15 00:42:28 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 00:42:28 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771096348329, current=DOWN, previous=UP]
+2026-02-15 00:42:28 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 00:42:28 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 00:42:28 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 00:42:28 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-15 00:42:28 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-15 00:42:28 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-15 00:42:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 00:42:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-02-15 00:42:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-02-15 00:42:28 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 10:49:24 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-15 10:49:25 INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.8 with PID 7912 (C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api\target\classes started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 10:49:25 INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 10:49:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-15 10:49:25 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-15 10:49:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 10:49:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 666 ms. Found 1 JPA repository interface.
+2026-02-15 10:49:32 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d81e2c28-3288-3856-98e5-4b8c93b5d31d
+2026-02-15 10:49:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-15 10:49:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-15 10:49:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-15 10:49:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-15 10:49:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-15 10:49:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10369 ms
+2026-02-15 10:49:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 10:49:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-02-15 10:49:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-15 10:49:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 10:49:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-15 10:49:40 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f492bf3
+2026-02-15 10:49:40 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-15 10:49:40 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-15 10:49:40 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-15 10:49:40 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 10:49:44 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 10:49:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 10:49:46 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 10:49:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 10:49:48 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2d83a602-8c5c-4166-93a2-93c37e7ee629
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 10:49:48 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 10:49:51 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-15 10:49:53 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-02-15 10:49:54 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-15 10:49:54 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-15 10:49:54 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-15 10:49:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-15 10:49:54 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-15 10:49:56 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771132796139 with initial instances count: 0
+2026-02-15 10:49:56 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PLANS-API with eureka with status UP
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771132796189, current=UP, previous=STARTING]
+2026-02-15 10:49:56 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 10:49:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-02-15 10:49:56 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-02-15 10:49:56 INFO  com.example.demo.DemoApplication - Started DemoApplication in 34.074 seconds (process running for 46.888)
+2026-02-15 10:49:56 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 10:49:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-15 10:49:57 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-15 10:49:57 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 10:50:26 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 10:54:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 10:59:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:04:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:09:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:14:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:19:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:24:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:29:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:34:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:39:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:44:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:49:54 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:54:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 11:59:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:04:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:09:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:14:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:19:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:24:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:29:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:34:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:39:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:44:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:49:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:54:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 12:59:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:04:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:09:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:14:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:19:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:24:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:29:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:34:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:39:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:44:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:49:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:54:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 13:59:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:04:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:09:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:14:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:19:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:24:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:29:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:34:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:39:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:44:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:49:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:54:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 14:59:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:04:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:09:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:14:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:19:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:24:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:29:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:30:11 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 25 class path changes (0 additions, 25 deletions, 0 modifications)
+2026-02-15 15:30:12 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 15:30:12 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771149612321, current=DOWN, previous=UP]
+2026-02-15 15:30:12 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:30:12 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:30:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 15:30:13 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-15 15:30:14 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:30:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-15 15:30:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-15 15:30:16 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 15:30:19 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-15 15:30:19 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - deregister  status: 200
+2026-02-15 15:30:19 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-02-15 15:30:24 INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.8 with PID 7912 (C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api\target\classes started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 15:30:24 INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 15:30:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 15:30:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2026-02-15 15:30:34 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d81e2c28-3288-3856-98e5-4b8c93b5d31d
+2026-02-15 15:30:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-15 15:30:35 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-15 15:30:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-15 15:30:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-15 15:30:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11289 ms
+2026-02-15 15:30:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 15:30:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-15 15:30:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 15:30:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-15 15:30:38 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a4fe4aa
+2026-02-15 15:30:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-15 15:30:38 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-15 15:30:38 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-15 15:30:38 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 15:30:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 15:30:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:30:40 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 15:30:40 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7cc949f5-0d20-475d-a00b-360ebd77177e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 15:30:40 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 15:30:45 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-15 15:30:50 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-02-15 15:30:50 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-15 15:30:51 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-15 15:30:51 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-15 15:30:51 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 25 class path changes (25 additions, 0 deletions, 0 modifications)
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-15 15:30:51 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-15 15:30:51 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-15 15:30:52 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771149652387 with initial instances count: 10
+2026-02-15 15:30:52 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PLANS-API with eureka with status UP
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771149652446, current=UP, previous=STARTING]
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:30:52 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-02-15 15:30:52 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:30:52 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771149652611, current=DOWN, previous=UP]
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:30:52 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 15:30:52 INFO  com.example.demo.DemoApplication - Started DemoApplication in 29.042 seconds (process running for 16903.207)
+2026-02-15 15:30:52 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:30:52 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:52 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-15 15:30:52 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:30:52 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:30:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-15 15:30:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-15 15:30:52 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 15:30:55 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-15 15:30:55 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - deregister  status: 200
+2026-02-15 15:30:55 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-02-15 15:30:56 INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.8 with PID 7912 (C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api\target\classes started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 15:30:56 INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 15:31:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 15:31:02 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 1 JPA repository interface.
+2026-02-15 15:31:03 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d81e2c28-3288-3856-98e5-4b8c93b5d31d
+2026-02-15 15:31:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-15 15:31:04 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:31:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-15 15:31:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-15 15:31:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-15 15:31:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8753 ms
+2026-02-15 15:31:07 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 15:31:17 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-15 15:31:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 15:31:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-15 15:31:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fd1fa58
+2026-02-15 15:31:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-15 15:31:17 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-15 15:31:17 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-15 15:31:17 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 15:31:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 15:31:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:31:20 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 15:31:21 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b31e9971-96db-4086-827f-2107957c3bf9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 15:31:21 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 15:31:25 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-15 15:31:28 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-02-15 15:31:28 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-15 15:31:29 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-15 15:31:29 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-15 15:31:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-15 15:31:29 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771149689436 with initial instances count: 10
+2026-02-15 15:31:29 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PLANS-API with eureka with status UP
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771149689470, current=UP, previous=STARTING]
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:31:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:31:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-02-15 15:31:29 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-02-15 15:31:29 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:31:29 INFO  com.example.demo.DemoApplication - Started DemoApplication in 33.453 seconds (process running for 16940.138)
+2026-02-15 15:31:29 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-02-15 15:31:58 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-15 15:31:58 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-15 15:31:58 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-02-15 15:36:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:41:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:46:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:47:13 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-15 15:47:13 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 15:47:13 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771150633393, current=DOWN, previous=UP]
+2026-02-15 15:47:13 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:47:13 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:47:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 15:47:13 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:47:13 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-15 15:47:13 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:47:13 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:47:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-15 15:47:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-02-15 15:47:13 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 15:47:16 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-15 15:47:16 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - deregister  status: 200
+2026-02-15 15:47:16 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-02-15 15:50:22 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-15 15:50:22 INFO  com.example.demo.DemoApplication - Starting DemoApplication using Java 21.0.8 with PID 17028 (C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api\target\classes started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 15:50:22 INFO  com.example.demo.DemoApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 15:50:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-15 15:50:22 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-15 15:50:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 15:50:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 621 ms. Found 1 JPA repository interface.
+2026-02-15 15:50:31 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=66328416-b71e-392d-80e3-58e1af51fa61
+2026-02-15 15:50:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-15 15:50:33 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:50:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-15 15:50:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-15 15:50:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-15 15:50:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11281 ms
+2026-02-15 15:50:36 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 15:50:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-02-15 15:50:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-15 15:50:38 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 15:50:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-15 15:50:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1070893
+2026-02-15 15:50:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-15 15:50:39 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-15 15:50:39 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-15 15:50:39 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 15:50:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 15:50:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 15:50:45 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 15:50:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 15:50:48 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 775896b5-b8dc-4168-b513-5c403302e17b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 15:50:48 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 15:50:51 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-15 15:50:54 WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-02-15 15:50:54 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-15 15:50:55 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-15 15:50:55 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-15 15:50:55 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-15 15:50:55 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 15:50:56 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 15:50:56 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-15 15:50:56 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-15 15:50:56 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771150856891 with initial instances count: 6
+2026-02-15 15:50:56 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PLANS-API with eureka with status UP
+2026-02-15 15:50:56 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771150856933, current=UP, previous=STARTING]
+2026-02-15 15:50:56 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-02-15 15:50:56 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 15:50:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-02-15 15:50:56 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+2026-02-15 15:50:57 INFO  com.example.demo.DemoApplication - Started DemoApplication in 37.969 seconds (process running for 44.412)
+2026-02-15 15:50:57 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 15:50:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-15 15:50:57 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-15 15:50:57 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2026-02-15 15:55:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:00:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:05:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:10:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:15:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:20:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:25:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:30:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 16:35:56 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:14:13 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m12s629ms776µs600ns).
+2026-02-15 17:15:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:20:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:25:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:30:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:35:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:40:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:45:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:50:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 17:55:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:00:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:05:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:10:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:15:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:20:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:25:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:30:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:35:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:40:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:45:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:50:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 18:55:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:00:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:05:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:10:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:15:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:20:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:25:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:30:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:35:28 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:40:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:45:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:50:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 19:55:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:00:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:05:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:10:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:15:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:20:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:25:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:30:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:35:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:40:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:45:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:50:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 20:55:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:00:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:05:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:10:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:15:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:20:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:25:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 21:30:29 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:13:57 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m9s38ms236µs200ns).
+2026-02-15 22:18:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:23:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:23:43 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-02-15 22:23:44 INFO  c.e.demo.rest.PlanRestControllerTest - Starting PlanRestControllerTest using Java 21.0.8 with PID 14604 (started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 22:23:44 INFO  c.e.demo.rest.PlanRestControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 22:24:06 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fd0c9166-eff0-4e7c-b7c1-3417978802eb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 22:24:06 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 22:24:07 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-02-15 22:24:07 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-02-15 22:24:07 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2026-02-15 22:24:07 INFO  c.e.demo.rest.PlanRestControllerTest - Started PlanRestControllerTest in 28.729 seconds (process running for 64.531)
+2026-02-15 22:24:12 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-02-15 22:24:13 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.DemoApplicationTests
+2026-02-15 22:24:13 INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2026-02-15 22:24:14 INFO  c.example.demo.DemoApplicationTests - Starting DemoApplicationTests using Java 21.0.8 with PID 14604 (started by LAPPY SHOP in C:\Users\LAPPY SHOP\Documents\workspace-spring-tools-for-eclipse-4.32.0.RELEASE\Plans_Api)
+2026-02-15 22:24:14 INFO  c.example.demo.DemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-02-15 22:24:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-15 22:24:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 194 ms. Found 1 JPA repository interface.
+2026-02-15 22:24:23 INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f17ba5b5-3bb6-35e7-a8d9-d5ad42f5ec5c
+2026-02-15 22:24:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-15 22:24:27 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-02-15 22:24:27 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-15 22:24:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-15 22:24:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-15 22:24:30 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4844cbe4
+2026-02-15 22:24:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-15 22:24:31 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-15 22:24:31 WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-02-15 22:24:31 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-15 22:24:36 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-15 22:24:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 22:24:39 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-15 22:24:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-15 22:24:43 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 87dd74dc-dd78-4230-986d-e322ada25b58
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-15 22:24:43 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-02-15 22:24:48 INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 17 endpoints beneath base path '/actuator'
+2026-02-15 22:24:56 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-02-15 22:24:58 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-15 22:24:58 INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-02-15 22:24:58 INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-02-15 22:24:58 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-02-15 22:24:59 INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-02-15 22:25:03 INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-02-15 22:25:03 INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-02-15 22:25:03 INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-15 22:25:03 INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1771174503521 with initial instances count: 11
+2026-02-15 22:25:03 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PLANS-API with eureka with status UP
+2026-02-15 22:25:03 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771174503693, current=UP, previous=STARTING]
+2026-02-15 22:25:03 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 22:25:03 INFO  c.example.demo.DemoApplicationTests - Started DemoApplicationTests in 50.885 seconds (process running for 120.513)
+2026-02-15 22:25:04 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to fetch all plans
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Total plans fetched: 1
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to fetch all plans
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - No plans found in system
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to fetch plan by id: 99
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - Request to fetch plan by id: 99
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Updating plan ID: 99 with status: ACTIVE
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - update plan Id NotFound, ID: 99
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Updating plan ID: 1 with status: N
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - update plan Id NotFound, ID: 1
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to fetch plan by id: 1
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Plan fetched successfully for id: Health
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Updating plan ID: 1 with status: ACTIVE
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Plan status updated successfully for ID: 1
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to save plan received: Health
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - Plan already exists (pre-check): Health
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to save plan received: Health
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Plan saved successfully: null
+2026-02-15 22:25:07 INFO  c.e.demo.service.PlanServiceImpl - Request to save plan received: Health
+2026-02-15 22:25:07 WARN  c.e.demo.service.PlanServiceImpl - Plan already exists (DB constraint): Health
+2026-02-15 22:25:07 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 22:25:07 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771174507844, current=DOWN, previous=UP]
+2026-02-15 22:25:07 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 22:25:07 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 22:25:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 22:25:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-15 22:25:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-15 22:25:07 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 22:25:10 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-15 22:25:11 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - deregister  status: 200
+2026-02-15 22:25:11 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-02-15 22:25:32 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - Re-registering apps/PLANS-API
+2026-02-15 22:25:32 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 22:25:32 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 22:28:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:33:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:38:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:43:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:48:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:53:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 22:58:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:03:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:08:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:13:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:18:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:23:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:28:08 INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-15 23:29:21 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 25 class path changes (0 additions, 25 deletions, 0 modifications)
+2026-02-15 23:29:21 INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PLANS-API with eureka with status DOWN
+2026-02-15 23:29:21 INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1771178361360, current=DOWN, previous=UP]
+2026-02-15 23:29:21 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081: registering service...
+2026-02-15 23:29:22 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - registration status: 204
+2026-02-15 23:29:22 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-15 23:29:22 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-15 23:29:23 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-15 23:29:23 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-15 23:29:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-15 23:29:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-15 23:29:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-15 23:29:27 INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-02-15 23:29:30 INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-02-15 23:29:31 INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PLANS-API/DESKTOP-TT9MVFL:plans-api:8081 - deregister  status: 200
+2026-02-15 23:29:31 INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

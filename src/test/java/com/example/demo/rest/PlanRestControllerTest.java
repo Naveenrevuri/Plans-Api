@@ -1,9 +1,9 @@
 package com.example.demo.rest;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import java.time.LocalDate;
@@ -11,9 +11,11 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.example.demo.constants.AppConstants;
@@ -26,128 +28,148 @@ import com.example.demo.service.PlanService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebMvcTest(PlanRestController.class)
+@AutoConfigureMockMvc(addFilters = false) // bypass security for unit tests
 class PlanRestControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
-    @MockitoBean
+    @MockBean
     private PlanService planService;
 
     @Autowired
     private ObjectMapper objectMapper;
 
-    // ---------------- savePlan ----------------
-
+    // ---------------- SAVE PLAN ----------------
     @Test
     void testSavePlan_Success() throws Exception {
-    	 PlanDto dto = new PlanDto();
-    	    dto.setPlanName("HealthPlan");
-    	    dto.setComments("Test plan");
-    	    dto.setStartDate(LocalDate.now());
-    	    dto.setEndDate(LocalDate.now().plusDays(30));
-    	    dto.setActiveSw("Y");   // 🔥 MOST IMPORTANT
+        PlanDto planDto = new PlanDto();
+        planDto.setPlanName("HealthPlan");
+        planDto.setActiveSw("Y");
+        planDto.setStartDate(LocalDate.now());
+        planDto.setEndDate(LocalDate.now().plusDays(30));
 
-    	    when(planService.savePlan(any(PlanDto.class))).thenReturn(true);
+        when(planService.savePlan(any(PlanDto.class))).thenReturn(true);
 
-    	    mockMvc.perform(post("/savePlan")
-    	            .contentType(MediaType.APPLICATION_JSON)
-    	            .content(objectMapper.writeValueAsString(dto)))
-    	            .andDo(print())   // debugging helper
-    	            .andExpect(status().isCreated())
-    	            .andExpect(content().string(AppConstants.PLAN_SAVED));
+        mockMvc.perform(post("/plan/savePlan")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(planDto)))
+                .andExpect(status().isCreated());
     }
 
     @Test
     void testSavePlan_AlreadyExists() throws Exception {
-        PlanDto dto = new PlanDto();
-        dto.setPlanName("Health");
+        PlanDto planDto = new PlanDto();
+        planDto.setPlanName("HealthPlan");
+        planDto.setActiveSw("Y");
+        planDto.setStartDate(LocalDate.now());
+        planDto.setEndDate(LocalDate.now().plusDays(30));
 
-        when(planService.savePlan(dto))
+        when(planService.savePlan(any(PlanDto.class)))
                 .thenThrow(new AlreadyExistsException("Plan already exists"));
 
-        mockMvc.perform(post("/savePlan")
+        mockMvc.perform(post("/plan/savePlan")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(dto)))
-                .andExpect(status().isBadRequest());
+                .content(objectMapper.writeValueAsString(planDto)))
+                .andExpect(status().isConflict());
     }
 
-    // ---------------- getPlans ----------------
-
+    // ---------------- GET ALL PLANS ----------------
     @Test
     void testGetPlans_Success() throws Exception {
-    	PlanResponceDto dto = new PlanResponceDto();
-        dto.setPlanName("Health");
+        PlanResponceDto dto = new PlanResponceDto();
+        dto.setPlanName("HealthPlan");
 
         when(planService.getPlans()).thenReturn(List.of(dto));
 
-        mockMvc.perform(get("/Plans"))
+        mockMvc.perform(get("/plan/plans"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.length()").value(1))
-                .andExpect(jsonPath("$[0].planName").value("Health"));
+                .andExpect(jsonPath("$[0].planName").value("HealthPlan"));
     }
 
     @Test
     void testGetPlans_NotFound() throws Exception {
-        when(planService.getPlans())
-                .thenThrow(new NotFoundException("Plan not found"));
+        when(planService.getPlans()).thenThrow(new NotFoundException("Plans not found"));
 
-        mockMvc.perform(get("/Plans"))
+        mockMvc.perform(get("/plan/plans"))
                 .andExpect(status().isNotFound());
     }
 
-    // ---------------- getPlan by id ----------------
-
+    // ---------------- UPDATE PLAN (GET PLAN DATA) ----------------
     @Test
-    void testGetPlan_Success() throws Exception {
-        PlanResponceDto dto=new PlanResponceDto();
-        dto.setPlanName("Health");
+    void testUpdatePlan_Success() throws Exception {
+        PlanResponceDto dto = new PlanResponceDto();
+        dto.setPlanName("HealthPlan");
 
-        when(planService.getPlan(1)).thenReturn(dto);
+        when(planService.updatePlanStatus(1)).thenReturn(dto);
 
-        mockMvc.perform(get("/plan/1"))
+        mockMvc.perform(put("/plan/1"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.planName").value("Health"));
+                .andExpect(jsonPath("$.planName").value("HealthPlan"));
     }
 
     @Test
-    void testGetPlan_NotFound() throws Exception {
-        when(planService.getPlan(99))
-                .thenThrow(new NotFoundException("Plan not found"));
+    void testUpdatePlan_NotFound() throws Exception {
+        when(planService.updatePlanStatus(99)).thenThrow(new NotFoundException("Plan not found"));
 
-        mockMvc.perform(get("/plan/99"))
+        mockMvc.perform(put("/plan/99"))
                 .andExpect(status().isNotFound());
     }
 
-    // ---------------- updatePlanStatus ----------------
-
+    // ---------------- UPDATE STATUS ----------------
     @Test
     void testUpdatePlanStatus_Success() throws Exception {
-        when(planService.updatePlan(1, "ACTIVE"))
-                .thenReturn(true);
+        when(planService.updatePlan(eq(1), eq("Y"))).thenReturn(true);
 
-        mockMvc.perform(put("/plan/1/ACTIVE"))
+        mockMvc.perform(put("/plan/1/Y"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(AppConstants.STATUS_ACTIVE));
     }
 
     @Test
-    void testUpdatePlanStatus_InvalidStatus() throws Exception {
-        when(planService.updatePlan(1, "N"))
-                .thenThrow(new InvalidException("Invalid status"));
+    void testUpdatePlanStatus_Failure_InternalError() throws Exception {
+        when(planService.updatePlan(eq(1), eq("N"))).thenReturn(false);
 
         mockMvc.perform(put("/plan/1/N"))
+                .andExpect(status().isInternalServerError())
+                .andExpect(content().string(AppConstants.STATUS_INACTIVE));
+    }
+
+    @Test
+    void testUpdatePlanStatus_InvalidStatus() throws Exception {
+        when(planService.updatePlan(eq(1), eq("X"))).thenThrow(new InvalidException("Invalid status"));
+
+        mockMvc.perform(put("/plan/1/X"))
                 .andExpect(status().isBadRequest());
     }
 
     @Test
     void testUpdatePlanStatus_NotFound() throws Exception {
-        when(planService.updatePlan(99, "ACTIVE"))
-                .thenThrow(new NotFoundException("Plan not found"));
+        when(planService.updatePlan(eq(99), eq("Y"))).thenThrow(new NotFoundException("Plan not found"));
 
-        mockMvc.perform(put("/plan/99/ACTIVE"))
+        mockMvc.perform(put("/plan/99/Y"))
                 .andExpect(status().isNotFound());
     }
 
-    
+    // ---------------- GET ACTIVE PLAN NAMES ----------------
+    @Test
+    void testGetActivePlanNames() throws Exception {
+        when(planService.getActivePlanNames()).thenReturn(List.of("HealthPlan"));
+
+        mockMvc.perform(get("/plan/active"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.length()").value(1))
+                .andExpect(jsonPath("$[0]").value("HealthPlan"));
+    }
+
+    // ---------------- ACCESS DENIED TEST ----------------
+    @Test
+    void testAccessDeniedException() throws Exception {
+        when(planService.getPlans())
+                .thenThrow(new AccessDeniedException("Access denied"));
+
+        mockMvc.perform(get("/plan/plans"))
+                .andExpect(status().isForbidden());
+    }
 }

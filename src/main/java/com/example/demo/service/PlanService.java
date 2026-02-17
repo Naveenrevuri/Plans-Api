@@ -15,7 +15,7 @@ public interface PlanService {
 	
 	public boolean updatePlan(Integer planId,String status);
 	
-	public   PlanResponceDto updatePlan(Integer planId);
+	public   PlanResponceDto updatePlanStatus(Integer planId);
     
 	 List<String> getActivePlanNames();
 }

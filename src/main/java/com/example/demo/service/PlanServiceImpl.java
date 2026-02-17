@@ -170,7 +170,7 @@ public class PlanServiceImpl implements PlanService {
 
 
 	@Override
-	public PlanResponceDto updatePlan(Integer planId) {
+	public PlanResponceDto updatePlanStatus(Integer planId) {
 		PlanMaster entity = planMasterRepo.findById(planId)
                 .orElseThrow(() -> new NotFoundException(
                         "Plan not found with id : " + planId));

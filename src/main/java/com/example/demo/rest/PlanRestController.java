@@ -59,7 +59,7 @@ public class PlanRestController {
 
          logger.info("Update plan request for planId {}", planId);
 
-         PlanResponceDto responseDto = planService.updatePlan(planId);
+         PlanResponceDto responseDto = planService.updatePlanStatus(planId);
 
          return new ResponseEntity<>(responseDto, HttpStatus.OK);
      }

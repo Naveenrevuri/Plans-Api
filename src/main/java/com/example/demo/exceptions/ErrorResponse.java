@@ -2,6 +2,12 @@ package com.example.demo.exceptions;
 
 import java.time.LocalDateTime;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ErrorResponse {
 
     private LocalDateTime timestamp;
@@ -12,51 +18,6 @@ public class ErrorResponse {
 	
     
 	
-	public ErrorResponse(LocalDateTime timestamp, int status, String error, Object message) {
-		super();
-		this.timestamp = timestamp;
-		this.status = status;
-		this.error = error;
-		this.message = message;
-	}
 
-	public ErrorResponse() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-	}
-
-	public int getStatus() {
-		return status;
-	}
-
-	public void setStatus(int status) {
-		this.status = status;
-	}
-
-	public String getError() {
-		return error;
-	}
-
-	public void setError(String error) {
-		this.error = error;
-	}
-
-	public Object getMessage() {
-		return message;
-	}
-
-	public void setMessage(Object message) {
-		this.message = message;
-	}
-
-	
     
 }
