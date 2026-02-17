@@ -46,9 +46,9 @@ public class GlobalExceptionHandler {
 	    logger.warn("Validation failed");
 	    Map<String, String> message = new HashMap<>();
 
-	    ex.getBindingResult().getFieldErrors().forEach(error -> {
-	    	message.put(error.getField(), error.getDefaultMessage());
-	    });
+	    ex.getBindingResult().getFieldErrors().forEach(error -> 
+	    	message.put(error.getField(), error.getDefaultMessage())
+	);
 
 	    ErrorResponse response = new ErrorResponse(
 	            LocalDateTime.now(),                 //  timestamp
@@ -95,9 +95,8 @@ public class GlobalExceptionHandler {
     }
 
     
-
     @ExceptionHandler(org.springframework.security.access.AccessDeniedException.class)
-    public ResponseEntity<?> handleAccessDeniedException(Exception ex) {
+    public ResponseEntity<Map<String, Object>> handleAccessDeniedException(Exception ex) {
 
         return ResponseEntity.status(403).body(
             Map.of(
@@ -109,7 +108,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<?> handleAll(Exception ex) {
+    public ResponseEntity<Map<String, Object>> handleAll(Exception ex) {
 
         return ResponseEntity.status(500).body(
             Map.of(
@@ -119,5 +118,5 @@ public class GlobalExceptionHandler {
             )
         );
     }
- 
+
 }

@@ -120,7 +120,9 @@ class PlanRestControllerTest {
     // ---------------- UPDATE STATUS ----------------
     @Test
     void testUpdatePlanStatus_Success() throws Exception {
-        when(planService.updatePlan(eq(1), eq("Y"))).thenReturn(true);
+
+        when(planService.updatePlan(1, "Y"))
+                .thenReturn(true);
 
         mockMvc.perform(put("/plan/1/Y"))
                 .andExpect(status().isOk())
@@ -129,7 +131,9 @@ class PlanRestControllerTest {
 
     @Test
     void testUpdatePlanStatus_Failure_InternalError() throws Exception {
-        when(planService.updatePlan(eq(1), eq("N"))).thenReturn(false);
+
+        when(planService.updatePlan(1, "N"))
+                .thenReturn(false);
 
         mockMvc.perform(put("/plan/1/N"))
                 .andExpect(status().isInternalServerError())
@@ -138,7 +142,9 @@ class PlanRestControllerTest {
 
     @Test
     void testUpdatePlanStatus_InvalidStatus() throws Exception {
-        when(planService.updatePlan(eq(1), eq("X"))).thenThrow(new InvalidException("Invalid status"));
+
+        when(planService.updatePlan(1, "X"))
+                .thenThrow(new InvalidException("Invalid status"));
 
         mockMvc.perform(put("/plan/1/X"))
                 .andExpect(status().isBadRequest());
@@ -146,7 +152,9 @@ class PlanRestControllerTest {
 
     @Test
     void testUpdatePlanStatus_NotFound() throws Exception {
-        when(planService.updatePlan(eq(99), eq("Y"))).thenThrow(new NotFoundException("Plan not found"));
+
+        when(planService.updatePlan(99, "Y"))
+                .thenThrow(new NotFoundException("Plan not found"));
 
         mockMvc.perform(put("/plan/99/Y"))
                 .andExpect(status().isNotFound());

@@ -12,65 +12,81 @@ class ErrorResponseTest {
 
     @Test
     void testAllArgsConstructorAndGetters() {
+
         LocalDateTime now = LocalDateTime.now();
         Map<String, String> msgMap = new HashMap<>();
         msgMap.put("field", "must not be null");
 
-        ErrorResponse errorResponse = new ErrorResponse(now, 400, "Validation Error", msgMap);
+        ErrorResponse errorResponse =
+                new ErrorResponse(now, 400, "Validation Error", msgMap);
 
-        assertThat(errorResponse.getTimestamp()).isEqualTo(now);
-        assertThat(errorResponse.getStatus()).isEqualTo(400);
-        assertThat(errorResponse.getError()).isEqualTo("Validation Error");
-        assertThat(errorResponse.getMessage()).isEqualTo(msgMap);
+        assertThat(errorResponse)
+                .extracting(
+                        ErrorResponse::getTimestamp,
+                        ErrorResponse::getStatus,
+                        ErrorResponse::getError,
+                        ErrorResponse::getMessage
+                )
+                .containsExactly(now, 400, "Validation Error", msgMap);
     }
 
     @Test
     void testNoArgsConstructorAndSetters() {
-        ErrorResponse errorResponse = new ErrorResponse();
 
         LocalDateTime now = LocalDateTime.now();
+
+        ErrorResponse errorResponse = new ErrorResponse();
         errorResponse.setTimestamp(now);
         errorResponse.setStatus(500);
         errorResponse.setError("System Error");
         errorResponse.setMessage("Something went wrong");
 
-        assertThat(errorResponse.getTimestamp()).isEqualTo(now);
-        assertThat(errorResponse.getStatus()).isEqualTo(500);
-        assertThat(errorResponse.getError()).isEqualTo("System Error");
-        assertThat(errorResponse.getMessage()).isEqualTo("Something went wrong");
+        assertThat(errorResponse)
+                .extracting(
+                        ErrorResponse::getTimestamp,
+                        ErrorResponse::getStatus,
+                        ErrorResponse::getError,
+                        ErrorResponse::getMessage
+                )
+                .containsExactly(now, 500, "System Error", "Something went wrong");
     }
 
     @Test
     void testMessageWithMapAndString() {
+
         ErrorResponse errorResponse = new ErrorResponse();
 
         Map<String, String> mapMsg = new HashMap<>();
         mapMsg.put("name", "must not be blank");
+
         errorResponse.setMessage(mapMsg);
-        assertThat(errorResponse.getMessage()).isInstanceOf(Map.class);
+
+        assertThat(errorResponse.getMessage())
+                .isInstanceOf(Map.class);
 
         errorResponse.setMessage("Simple message");
-        assertThat(errorResponse.getMessage()).isInstanceOf(String.class);
+
+        assertThat(errorResponse.getMessage())
+                .isInstanceOf(String.class);
     }
 
     @Test
     void testEqualsAndHashCodeAndToString() {
+
         LocalDateTime now = LocalDateTime.now();
+
         ErrorResponse e1 = new ErrorResponse(now, 400, "Error", "Message");
         ErrorResponse e2 = new ErrorResponse(now, 400, "Error", "Message");
         ErrorResponse e3 = new ErrorResponse(now, 500, "Error", "Other");
 
-        // equals
-        assertThat(e1).isEqualTo(e2);
-        assertThat(e1).isNotEqualTo(e3);
+        assertThat(e1)
+                .isEqualTo(e2)
+                .isNotEqualTo(e3)
+                .hasSameHashCodeAs(e2)
+                .doesNotHaveSameHashCodeAs(e3);
 
-        // hashCode
-        assertThat(e1.hashCode()).isEqualTo(e2.hashCode());
-        assertThat(e1.hashCode()).isNotEqualTo(e3.hashCode());
-
-        // toString
-        String str = e1.toString();
-        assertThat(str).contains("timestamp", "status", "error", "message");
+        assertThat(e1.toString())
+                .contains("timestamp", "status", "error", "message");
     }
 }
 
