@@ -65,34 +65,45 @@ class GlobalExceptionHandlerTest {
         assertThat(body.getMessage()).isEqualTo("Invalid status");
     }
 
-    // ---------------- AccessDeniedException ----------------
+ // ---------------- AccessDeniedException ----------------
     @Test
     void testHandleAccessDeniedException() {
+
         org.springframework.security.access.AccessDeniedException ex =
                 new org.springframework.security.access.AccessDeniedException("No permission");
 
-        ResponseEntity<?> response = handler.handleAccessDeniedException(ex);
-        assertThat(response.getStatusCodeValue()).isEqualTo(403);
+        ResponseEntity<Map<String, Object>> response =
+                handler.handleAccessDeniedException(ex);
 
-        // Cast to Map<String, Object> for safe containsEntry
-        Map<String, Object> body = (Map<String, Object>) response.getBody();
-        assertThat(body).containsEntry("status", 403);
-        assertThat(body).containsEntry("error", "Forbidden");
-        assertThat(body).containsEntry("message", "You don't have permission");
+        assertThat(response.getStatusCodeValue())
+                .isEqualTo(403);
+
+        assertThat(response.getBody())
+                .containsEntry("status", 403)
+                .containsEntry("error", "Forbidden")
+                .containsEntry("message", "You don't have permission");
     }
+
 
     // ---------------- Generic Exception ----------------
     @Test
     void testHandleAllException() {
-        Exception ex = new Exception("Some error");
-        ResponseEntity<?> response = handler.handleAll(ex);
-        assertThat(response.getStatusCodeValue()).isEqualTo(500);
 
-        Map<String, Object> body = (Map<String, Object>) response.getBody();
-        assertThat(body).containsEntry("status", 500);
-        assertThat(body).containsEntry("error", "System Error");
-        assertThat(body).containsEntry("message", "Something went wrong. Please try again later.");
+        Exception ex = new Exception("Some error");
+
+        ResponseEntity<Map<String, Object>> response =
+                handler.handleAll(ex);
+
+        assertThat(response.getStatusCodeValue())
+                .isEqualTo(500);
+
+        assertThat(response.getBody())
+                .containsEntry("status", 500)
+                .containsEntry("error", "System Error")
+                .containsEntry("message",
+                        "Something went wrong. Please try again later.");
     }
+
 
     // ---------------- MethodArgumentNotValidException ----------------
     @Test
